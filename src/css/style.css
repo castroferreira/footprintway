@@ -1,0 +1,26 @@
+/* TIPOS DE LETRA */
+
+@font-face {
+    font-family: 'titulo';
+    src: url('../css/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'subtitulo';
+    src: url('../css/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'corpo-texto';
+    src: url('../css/Raleway-Light.ttf');
+}
+
+/* SISTEMA DE CORES */
+
+:root {
+    --texto: #313333;
+    --fundo: #85CAC3;
+    --nav-cards: #F5F6F5;
+    --azul-botoes: #C8E8E4;
+    --verde: #27A637;
+}
