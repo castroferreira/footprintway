@@ -1,0 +1,28 @@
+/* SISTEMA DE CORES */
+
+:root {
+    --texto: #313333;
+    --fundo: #85CAC3;
+    --nav-cards: #F5F6F5;
+    --azul-botoes: #C8E8E4;
+    --verde: #27A637;
+}
+
+.btn{
+    border-color: var(--azul-botoes);
+    border: 3px solid var(--azul-botoes);
+    /*  border-radius: 69px; */
+    background-color: var(--nav-cards);
+    color: var(--azul-botoes);
+    font-size: 45px;
+}
+
+h1{
+    font-size: 85px;
+}
+
+h2{
+    font-size: 65px;
+}
+
+
