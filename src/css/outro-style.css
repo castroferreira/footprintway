@@ -1,0 +1,8 @@
+@import './style.css';
+:root {
+    --texto: #313333;
+    --fundo: #85CAC3;
+    --nav-cards: #F5F6F5;
+    --azul-botoes: #C8E8E4;
+    --verde: #27A637;
+}
