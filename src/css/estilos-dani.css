@@ -1,0 +1,75 @@
+/* TIPOS DE LETRA */
+
+@font-face {
+    font-family: 'titulo';
+    src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'subtitulo';
+    src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'corpo-texto';
+    src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+
+
+
+/* SISTEMA DE CORES */
+
+:root {
+    --texto: #313333;
+    --azul-botoes: #85CAC3;
+    --nav-cards: #F5F6F5;
+    --fundo: #C8E8E4;
+    --verde: #27A637;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+.row {
+    padding: 0;
+}
+
+.fundo {
+    padding: 0;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 545px;
+}
+
+.logo {
+ width: 200px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  
+}
+
+.botoes {
+    align-content: center;
+}
+
+.btn {
+    border: 3px solid var(--azul-botoes);
+    border-radius: 20px;
+    background-color: var(--nav-cards);
+    color: var(--azul-botoes);
+    font-size: 20px;
+    height: 50px;
+    width: 220px;
+    text-align: center;
+    font-family: var(--texto);
+    margin-top: 15px;
+    font-family: 'corpo-texto';
+    font-weight: bold;
+}
+
+.mundo{
+    max-width: 300px;
+    max-height: 300px;
+}
