@@ -1,0 +1,48 @@
+@import 'style.css';
+:root {
+    --texto: #313333;
+    --azul-botoes: #85CAC3;
+    --nav-cards: #F5F6F5;
+    --fundo: #C8E8E4;
+    --verde: #27A637;
+}
+
+.card {
+    border-radius: 30px;
+}
+
+#c1{
+border-color: #27A637;
+}
+
+h2{
+    font-family: var(--texto);
+   
+}
+
+.btn-group button {
+    background-color:#F5F6F5; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-family: var(--texto);
+    
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
