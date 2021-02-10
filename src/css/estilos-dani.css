@@ -35,41 +35,41 @@ body {
     padding: 0;
 }
 
-.fundo {
-    padding: 0;
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-top: 545px;
-}
-
 .logo {
- width: 200px;
+  width: 200px;
   margin: 0 auto;
   display: block;
   position: relative;
   
 }
 
-.botoes {
-    align-content: center;
-}
-
-.btn {
-    border: 3px solid var(--azul-botoes);
-    border-radius: 20px;
-    background-color: var(--nav-cards);
-    color: var(--azul-botoes);
-    font-size: 20px;
-    height: 50px;
-    width: 220px;
-    text-align: center;
-    font-family: var(--texto);
-    margin-top: 15px;
-    font-family: 'corpo-texto';
-    font-weight: bold;
-}
-
 .mundo{
     max-width: 300px;
     max-height: 300px;
 }
+
+.card {
+    border-radius: 30px;
+}
+
+.custom{
+    height: 60px !important;
+  }
+  .toolbar-inner{
+    max-height: 44px;
+    bottom: 0 !important;
+    top: auto;
+  }
+  .toolbar-text-container {
+    position: absolute;
+    height: 14px;
+    top: 0;
+    background: #42b833;
+    width: 100%;
+    text-align: center;
+    line-height: 14px;
+  }
+  
+  .toolbar-text-container span {
+    font-size: 12px;
+  }
