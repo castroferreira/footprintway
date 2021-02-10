@@ -46,3 +46,23 @@ h2{
   .btn-group button:hover {
     background-color: #3e8e41;
   }
+
+
+
+#menu{
+    margin-left: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.logo{
+    width: 150px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.navbar-padding{
+    padding-bottom: 50px;
+}
+
+
