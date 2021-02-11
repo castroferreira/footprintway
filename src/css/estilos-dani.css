@@ -69,5 +69,16 @@ body {
 
 .card {
     border-radius: 30px;
+    margin: 0 auto;
+    float: none;
 }
+
+.centrar-1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
