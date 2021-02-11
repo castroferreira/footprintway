@@ -1,16 +1,16 @@
 /* TIPOS DE LETRA */
 
-@font-face {
+h2 {
     font-family: 'titulo';
     src: url('../css/Raleway-Bold.ttf');
 }
 
-@font-face {
+h4{
     font-family: 'subtitulo';
     src: url('../css/Raleway-SemiBold.ttf');
 }
 
-@font-face {
+p {
     font-family: 'corpo-texto';
     src: url('../css/Raleway-Light.ttf');
 }
