@@ -58,13 +58,31 @@ body {
   
 }
 
+.text-align-center{
+    text-align: center;
+    margin: 0;
+}
+
 .navbar-padding{
     padding-bottom: 50px;
 }
 
+.padding-posicao {
+    padding-left: 23px;
+}
+
+.padding-icone-1 {
+    padding-top: 100px;
+}
+
+.padding-icone-2 {
+    padding-top: 150px;
+}
+
+
 .mundo{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 .card {
@@ -87,3 +105,5 @@ body {
     text-decoration-color: var(--texto);
     text-align: right;
 }
+
+
