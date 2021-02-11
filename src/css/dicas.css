@@ -76,6 +76,7 @@ p{
   float: none; 
   margin-bottom: 10px; 
 }
-.btn-outline-success{
-  align-items: center;
+
+btn{
+  align-content: right;
 }
