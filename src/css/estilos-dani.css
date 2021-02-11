@@ -81,4 +81,9 @@ body {
     align-items: center;
 }
 
-
+.f1 {
+    font-family: 'subtitulo';
+    src: url(../assets/fonts/Raleway-SemiBold.ttf);
+    text-decoration-color: var(--texto);
+    text-align: right;
+}

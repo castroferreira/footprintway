@@ -55,14 +55,14 @@
       </div>
     </div>
 
-     
+
     <div class="centrar-1">
       <div class="row">
         <img class="mundo" src="../assets/img/mundo ranking.png">
       </div>
     </div>
 
-    
+
     <div class="container">
       <div class="card mt-3" style="width: 18rem;">
         <div class="card-body">
@@ -81,15 +81,20 @@
     </div>
 
 
-    <div class="container">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Filtros
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="dropdown f1">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Filtros
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="margin: 0px;">
+              <li><a class="dropdown-item" href="#">Mais recentes</a></li>
+              <li><a class="dropdown-item" href="#">Mais antigas</a></li>
+              <li><a class="dropdown-item" href="#">Tema</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div>
@@ -138,26 +143,47 @@
         </tbody>
       </table>
     </div>
-  </main>
+    </div>
 
-  <footer>
+
     <nav class="navbar fixed-bottom navbar-light bg-light" id="menu">
-      <div class="row">
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-outline-success">
-            <img src="../assets/img/icons/ranking.png">
-            <p>Ranking</p>
-          </button>
-        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-outline-success">
+              <img src="../assets/img/icons/ranking.png">
+              <p>Ranking</p>
+            </button>
+          </div>
 
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-outline-success">
-            <img src="../assets/img/icons/dica.png">
-            <p>Dicas</p>
-          </button>
+          <div class="col-3">
+            <button type="button" class="btn btn-outline-success">
+              <img src="../assets/img/icons/dica.png">
+              <p>Dicas</p>
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button type="button" class="btn btn-outline-success">
+              <img src="../assets/img/icons/dica.png">
+              <p>Dicas</p>
+            </button>
+          </div>
+
+          <div class="col-3">
+            <button type="button" class="btn btn-outline-success">
+              <img src="../assets/img/icons/dica.png">
+              <p>Dicas</p>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+
+  </main>
+
+  <footer>
+
   </footer>
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
