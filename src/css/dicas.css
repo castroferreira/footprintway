@@ -17,19 +17,27 @@ body{
 border-color: #27A637;
 }
 
-
-.t1{
+.titulo {
   font-family: 'titulo';
-  src: url('../assets/fonts/Raleway-ExtraBold.ttf');
   text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: var(--texto);
 }
-
-
-.f1{
+@font-face {
+  font-family: 'titulo';
+  src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+@font-face {
   font-family: 'subtitulo';
   src: url('../assets/fonts/Raleway-SemiBold.ttf');
- text-decoration-color: var(--texto);
+}
+
+.subtitulo{
+  font-family: 'subtitulo';
   text-align: right;
+  font-size: 30px;
+  color: var(--texto);
 }
 
 p{
@@ -54,11 +62,6 @@ p{
   }
   
 
-#menu{
-    margin-left: 70px;
-    margin-bottom: 10px;
-    text-align: center;
-}
 .logo{
     width: 150px;
     margin: 0 auto;
@@ -77,6 +80,6 @@ p{
   margin-bottom: 10px; 
 }
 
-btn{
-  align-content: right;
+button{
+  align-content: left;
 }
