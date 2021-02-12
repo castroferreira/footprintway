@@ -90,56 +90,69 @@
   </div>
 
 
-  <a href="#" data-bs-toggle="modal" data-bs-target="#modal1"><button class="btn btn-secondary"><img src="../assets/img/icons/edit.png"></button></a>
-
-  <div class="modal" id="modal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+  <a href="#" data-bs-toggle="modal" data-bs-target="#modal1"><button class="btn btn-secondary"><img
+        src="../assets/img/icons/edit.png"></button></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="modal" id="modal1" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Escreve a tua dica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>Título</h2>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <h2>Descrição</h2>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-
   <footer>
     <nav class="navbar fixed-bottom navbar-light bg-light" id="menu">
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <button type="button" class="btn btn-outline-success">
+          <div class="col-3 text-align-center">
+            <a href="#">
               <img src="../assets/img/icons/ranking.png">
               <p>Ranking</p>
-            </button>
+            </a>
           </div>
 
-          <div class="col-3">
-            <button type="button" class="btn btn-outline-success">
+          <div class="col-3 navbar-inferior text-align-center">
+            <a href="#">
               <img src="../assets/img/icons/dica.png">
               <p>Dicas</p>
-            </button>
+            </a>
           </div>
 
-          <div class="col-3">
-            <button type="button" class="btn btn-outline-success">
+          <div class="col-3 navbar-inferior text-align-center">
+            <a href="#">
               <img src="../assets/img/icons/noticias.png">
               <p>Notícias</p>
-            </button>
+            </a>
           </div>
 
-          <div class="col-3">
-            <img src="../assets/img/icons/grupos.png">
-            <p>Grupos</p>
-            </button>
+          <div class="col-3 navbar-inferior text-align-center">
+            <a href="#">
+              <img src="../assets/img/icons/grupos.png">
+              <p>Grupos</p>
+            </a>
           </div>
         </div>
       </div>

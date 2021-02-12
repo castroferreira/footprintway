@@ -80,6 +80,6 @@ p{
   margin-bottom: 10px; 
 }
 
-button{
-  align-content: left;
+#modal1{
+  border-color: var(--fundo);
 }
