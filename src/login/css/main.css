@@ -49,7 +49,6 @@ html {
 .login100-form .img {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 
 }
@@ -231,10 +230,9 @@ iframe {
 
 .login100-form-title {
   font-family: titulo;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--texto);
   line-height: 1.2;
-  text-transform: uppercase;
   text-align: center;
 
   width: 100%;
