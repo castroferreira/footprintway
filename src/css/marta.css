@@ -1,28 +1,131 @@
+/* TIPOS DE LETRA */
+
+@font-face {
+    font-family: 'titulo';
+    src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'subtitulo';
+    src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'corpo-texto';
+    src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+
 /* SISTEMA DE CORES */
 
 :root {
     --texto: #313333;
-    --fundo: #85CAC3;
+    --azul-botoes: #85CAC3;
     --nav-cards: #F5F6F5;
-    --azul-botoes: #C8E8E4;
+    --fundo: #C8E8E4;
     --verde: #27A637;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--texto);
 }
 
 .btn{
     border-color: var(--azul-botoes);
     border: 3px solid var(--azul-botoes);
-    /*  border-radius: 69px; */
+    border-radius: 30px;
     background-color: var(--nav-cards);
     color: var(--azul-botoes);
-    font-size: 45px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: var(--texto);
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+/*     height: 50px;
+    width:220px; */
+}
+
+
+/* calcula_pegada */
+
+.texto_cp{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.fundo{
+    background-color: var(--nav-cards);
+    border-radius: 30px;
+    border: 15px solid var(--nav-cards);
+    margin-top: 63px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tx_e_btn{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+/* pe */
+.peg_ec{
+    font-size: 20px;
+}
+
+.img_mundo{
+    height: 25%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultado_pe{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.conteudo{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/* resultados */
+.btn_voltar{
+    box-align: left;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+}
+
+ .voltar{
+    height: 50px;
+    width: 50px;
 }
 
 h1{
-    font-size: 85px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 h2{
-    font-size: 65px;
+    font-size: 20 px;
+    text-align: center;
+    margin-bottom: 50px;
 }
+
+.conteudo2{
+    margin-top: 63px;
+    margin-bottom: 10%;
+}
+
 
 
