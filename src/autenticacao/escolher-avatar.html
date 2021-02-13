@@ -25,6 +25,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/outro-style.css">
     <!--===============================================================================================-->
 </head>
 
@@ -37,12 +38,31 @@
                     <span class="login100-form-title p-b-10">
                         Escolhe o teu avatar
                     </span>
-                    <div class="row py-5 justify-content-center">
-                        <img src="../assets/img/avatar_default.png" class="img flex-sb flex-w w-25 p-b-100">
+
+
+                    <div class="container">
+                        <div class="row py-5 justify-content-center" id="avatar-user">
+                            <img src="../assets/img/avatar_default.png" class="img flex-sb flex-w w-25 p-b-100">
+                        </div>
+                        <section class="dropdown-content" id="slider">
+                            <input type="radio" name="slider" id="s1" checked>
+                            <input type="radio" name="slider" id="s2">
+                            <input type="radio" name="slider" id="s3">
+                            <input type="radio" name="slider" id="s4">
+                            <input type="radio" name="slider" id="s5">
+                            <input type="radio" name="slider" id="s6">
+                            <input type="radio" name="slider" id="s7">
+
+                            <label class="avatar-items" for="s1" id="slide1"></label>
+                            <label class="avatar-items" for="s2" id="slide2"></label>
+                            <label class="avatar-items" for="s3" id="slide3"></label>
+                            <label class="avatar-items" for="s4" id="slide4"></label>
+                            <label class="avatar-items" for="s5" id="slide5"></label>
+                            <label class="avatar-items" for="s6" id="slide6"></label>
+                            <label class="avatar-items" for="s7" id="slide7"></label>
+                        </section>
                     </div>
-
-
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <!--                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner ">
                             <div class="carousel-item active align-content-center">
                                 <img class="d-block w-25" src="../assets/img/avatar_default.png" alt="First slide">
@@ -76,7 +96,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>
+                    </div> -->
 
 
 
@@ -92,7 +112,6 @@
     </div>
 
 
-    <div id="dropDownSelect1"></div>
 
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -110,7 +129,7 @@
     <script src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
-
+    <script src="../../src/js/avatar.js"></script>
 </body>
 
 </html>
