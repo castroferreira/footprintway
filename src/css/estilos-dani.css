@@ -98,12 +98,8 @@ body {
     margin-bottom: 0px;
 }
 
-.margem-navbar{
-    margin-bottom: 0;
-}
-
 .padding-posicao {
-    padding-left: 23px;
+    padding-left: 42px;
 }
 
 .padding-icone-1 {
@@ -114,11 +110,31 @@ body {
     padding-top: 150px;
 }
 
+.moved {
+    transform: translate(18px); 
+  }
+
+.margin-left-1{
+    margin-left: 18px; 
+}
+
+.margin-left-2{
+    margin-left: 18px; 
+}
+
+.margin-left-3{
+    margin-left: 18px; 
+}
+
+.margin-right-1{
+    margin-right: 10px;
+}
+
 
 
 .mundo{
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .card {
@@ -136,7 +152,7 @@ body {
 }
 
 .margem-ranking {
-    margin-bottom: 150px;
+    margin-bottom: 125px;
 }
 
 /* NAVBAR INFERIOR */
@@ -145,3 +161,30 @@ body {
     margin: 0;
 }
 
+.centrar-3{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.margem-navbar{
+    margin-bottom: 0;
+}
+
+.nav-hover :hover {
+    color: var(--verde);
+  }
+
+  .nav-hover :active{
+    color: var(--verde);
+  }
+
+
+  a {
+    outline: none;
+    text-decoration: none;
+    color: var(--texto)
+  }
+  
