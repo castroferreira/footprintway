@@ -39,11 +39,25 @@ border-color: #27A637;
   font-size: 30px;
   color: var(--texto);
 }
+.subtitulo2{
+  font-family: 'subtitulo';
+  text-align: left;
+  font-size: 20px;
+  color: var(--texto);
+}
+.subtitulo3{
+  font-family: 'subtitulo';
+  text-align: left;
+  font-size: 20px;
+  color: var(--texto);
+}
+
+
 
 p{
   font-family: 'corpo-texto';
   src: url('../assets/fonts/Raleway-Light.ttf');
-  text-align: left;
+ 
 }
 
 .btn-group button {
@@ -106,4 +120,57 @@ p{
   bottom: 150px;
   right: 16px;
   font-size: 18px;
+}
+
+.modal-body{
+  background-color:#C8E8E4;
+}
+.modal-header{
+  background-color:#C8E8E4;
+}
+.modal-footer{
+  background-color:#C8E8E4;
+}
+
+.text-align-center{
+  text-align: center;
+  margin: 0;
+}
+
+.centrar-3{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.margem-navbar{
+  margin-bottom: 0;
+}
+
+.nav-hover :hover {
+  color: var(--verde);
+}
+
+.nav-hover :active{
+  color: var(--verde);
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: var(--texto)
+}
+
+.centrar-3{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.form-control{
+  border-radius: 10px;
 }
