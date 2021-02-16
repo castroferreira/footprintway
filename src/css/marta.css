@@ -28,12 +28,14 @@
 body{
     background-color: var(--fundo);
     color: var(--texto);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn{
     border-color: var(--azul-botoes);
     border: 3px solid var(--azul-botoes);
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: var(--nav-cards);
     color: var(--azul-botoes);
     font-size: 20px;
@@ -76,48 +78,62 @@ body{
 /* pe */
 .peg_ec{
     font-size: 20px;
+    margin-bottom: 10%;
 }
 
 .img_mundo{
-    height: 25%;
-    width: 25%;
+    height: 150px;
+    width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
 }
 
 .resultado_pe{
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 5%;
 }
 
 .conteudo{
-    margin-top: 7%;
+    margin-top: 40%;
     margin-bottom: 10%;
     text-align: center;
 }
 
-/* resultados */
-.btn_voltar{
-    box-align: left;
-    margin-left: 15px;
-    height: 50px;
-    width: 50px;
+.bom_cam{
+    margin-bottom: 10%;
 }
 
+/* resultados */
+/* .btn_voltar{
+    box-align: left;
+    margin-left: 10%px;
+    height: 20 px;
+    background-color: transparent;
+/*     border: 0px solid transparent; */
+  /*   margin-bottom: 20px; */
+ 
+
  .voltar{
-    height: 50px;
-    width: 50px;
+    box-align: left;
+    margin-left: 10%px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h2{
-    font-size: 20 px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -127,5 +143,32 @@ h2{
     margin-bottom: 10%;
 }
 
+.tabela1{
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 10%;
+}
 
+.tabela2{
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 2%;
+}
 
+td{
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.icon{
+    height: 30px;
+    width: 40px;
+}
+
+.graf{
+    border: 5px solid var(--azul-botoes);
+    background-color: var(--fundo);
+    height: 100px;
+    width: 50px;
+}
