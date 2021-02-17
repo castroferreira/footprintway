@@ -53,6 +53,15 @@ html {
 
 }
 
+.hidden {
+  display: none;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
 /*---------------------------------------------*/
 a {
   font-family: corpo-texto;
