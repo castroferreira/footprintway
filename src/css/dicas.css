@@ -79,7 +79,7 @@ p{
     align-content: center;
   }
 
-  #botao, #botao1 {
+  #botao, #publicar {
     border: 3px solid var(--azul-botoes);
     border-radius: 20px;
     background-color: var(--nav-cards);
