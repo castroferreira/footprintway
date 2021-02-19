@@ -1,4 +1,4 @@
-/* TIPOS DE LETRA */
+/* FONTE */
 
 @font-face {
     font-family: 'titulo';
@@ -15,103 +15,32 @@
     src: url('../assets/fonts/Raleway-Regular.ttf');
 }
 
+/* TIPOS DE LETRA */
 
-/* SISTEMA DE CORES */
-
-:root {
-    --texto: #313333;
-    --azul-botoes: #85CAC3;
-    --nav-cards: #F5F6F5;
-    --fundo: #C8E8E4;
-    --verde: #27A637;
+.subtitulo {
+    font-family: 'subtitulo';
+    font-size: 30px;
+    color: var(--texto)
 }
 
-body {
-    background-color: var(--fundo);
+.subtitulo-filtros {
+    font-family: 'subtitulo';
+    text-align: right;
+    font-size: 30px;
+    color: var(--texto)
 }
 
-.row {
-    padding: 0;
-}
-
-.fundo {
-    padding: 0;
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-top: 545px;
-}
-
-.logo {
-    width: 200px;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-}
-
-.botoes {
-    align-content: center;
-}
-
-.btn {
-    border: 3px solid var(--azul-botoes);
-    border-radius: 20px;
-    background-color: var(--nav-cards);
-    color: var(--azul-botoes);
-    font-size: 20px;
-    height: 50px;
-    width: 220px;
-    text-align: center;
-    font-family: var(--texto);
-    margin-top: 15px;
-    font-family: 'corpo-texto';
-    font-weight: bold;
-}
-
-/*auetnticacao*/
-.titulo {
+​​​​​​​ .titulo {
     font-family: 'titulo';
     text-align: center;
-    margin-top: 100px;
-    font-size: 20px;
-    color: var(--texto);
+    margin-top: 30px;
+    font-size: 30px;
+    color: var(--texto)
 }
 
-.col-4 {
-    align-items: center;
-    margin-top: 50px;
-}
-
-.univ {
-    font-family: 'corpo-texto';
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.logo-ua {
-    height: 40px;
-    width: auto;
-}
-
-.autenticacao {
-    margin: 0;
-
-}
-
-input {
-    color: var(--texto);
-    border: none;
-    border-radius: 20px;
-    background-color: var(--nav-cards);
-    margin-top: 15px;
-    font-size: 20px;
-    height: 50px;
-    width: 250px;
-    padding-left: 10px;
-    font-family: 'corpo-texto';
-}
-
-a {
-    color: var(--texto);
-    font-family: 'corpo-texto';
-    font-size: 10px;
+.titulo-filtros {
+    font-family: 'titulo';
+    text-align: center;
+    font-size: 30px;
+    color: var(--texto)
 }
