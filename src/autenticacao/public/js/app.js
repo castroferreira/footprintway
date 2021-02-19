@@ -1,4 +1,4 @@
-let auth0 = null;
+/* let auth0 = null;
 const fetchAuthConfig = () => fetch("/auth_config.json");
 
 const configureClient = async () => {
@@ -36,4 +36,4 @@ window.onload = async () => {
         // Use replaceState to redirect the user away and remove the querystring parameters
         window.history.replaceState({}, document.title, "/");
     }
-};
+}; */
