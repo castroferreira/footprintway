@@ -1,24 +1,28 @@
-import * as firebase from "firebase/app";
-firebase.initializeApp ( {
-    apiKey: "AIzaSyAqgnHG58TJwd5ZaCbCSWwchPEWFlyThIE",
-    authDomain: "footprintway.firebaseapp.com",
-    databaseURL: "https://footprintway-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "footprintway",
-    storageBucket: "footprintway.appspot.com",
-    messagingSenderId: "705745529125",
-    appId: "1:705745529125:web:4872c408f265f5c77cd2cc",
-    measurementId: "G-QWL5XF7E6T"
-  });
-  
+const titulo = document.getElementById("titulo");
+const descricao = document.getElementById("descricao");
+const publicar = document.getElementById("publicar");
 
-  console.log(firebase);
+const database = firebase.database();
 
-  var database = firebase.database();
-  var ref= database.ref('dicas');
+publicar.addEventListener('click', (e) => {
+    e.preventDefault();
 
-  var data = {
-      dicadodia: "dicadodia5",
-      descricao: "Recolher agua"
-  }
+    database.ref('/Dicas/').set({
+    
+            dica_titulo: titulo.value,
+            dica_descricao: descricao.value
+    
+    });
+})
 
-  ref.push(data);
+var ref = database.ref('Dicas');
+ref.on('value', gotData, errData);
+
+function gotData(data){
+    console.log(data.val());
+}
+
+function errData(err){
+    console.log('Error');
+    console.log(err);
+}

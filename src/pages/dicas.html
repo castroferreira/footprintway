@@ -12,7 +12,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/dicas.css">
 
-  <title>FootprintWay</title>
+
 
 </head>
 
@@ -113,7 +113,7 @@
               </div>
               <div class="modal-footer centrar-3">
                 <button type="button" class="btn" id="botao" data-bs-dismiss="modal">Close</button>
-                <button type="button" onClick="submitClick()" class="btn" id="publicar">Publicar</button>
+                <button type="button" class="btn" id="publicar">Publicar</button>
               </div>
             </div>
           </div>
@@ -163,8 +163,7 @@
 
 
 
-  <script src="../js/dicas.js"></script>
-  <script src="../js/firebase.js"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
@@ -176,14 +175,41 @@
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
   </script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <!-------------database scripts-->
+  <script src="../js/dicas.js"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-database.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
 
-</body>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAqgnHG58TJwd5ZaCbCSWwchPEWFlyThIE",
+    authDomain: "footprintway.firebaseapp.com",
+    databaseURL: "https://footprintway-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "footprintway",
+    storageBucket: "footprintway.appspot.com",
+    messagingSenderId: "705745529125",
+    appId: "1:705745529125:web:4872c408f265f5c77cd2cc",
+    measurementId: "G-QWL5XF7E6T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="../js/firebase.js"></script>
+
+
+
+
+
+  </body>
 
 </html>
