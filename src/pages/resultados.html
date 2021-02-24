@@ -11,7 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/pegada.css">
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
   <script src="../js/grafico.js"></script>
 
   <title>Resultados</title>
@@ -26,58 +27,25 @@
   <main class="res">
     <div class="container col-sm-12 conteudo2">
       <img src="../assets/img/icons/voltar.png" class="voltar">
-      <h1>Os teus resultados</h1>
-      <h2>Por categoria de consumo</h2>
-      <div id="chart"></div>
 
-      <div>
-        <table class="tabela1">
-          <tr>
-            <td><img src="../assets/img/icons/alimentacao.png" class="icon"></td>
-            <td><img src="../assets/img/icons/habitacao.png" class="icon"></td>
-            <td><img src="../assets/img/icons/mobilidade.png" class="icon"></td>
-            <td><img src="../assets/img/icons/bens.png" class="icon"></td>
-            <td><img src="../assets/img/icons/servicos.png" class="icon"></td>
-          </tr>
-          <tr>
-            <td>Alimentação</td>
-            <td>Habitação</td>
-            <td>Mobilidade</td>
-            <td>Bens</td>
-            <td>Serviços</td>
-          </tr>
-        </table>
+      <h1>Os teus resultados</h1>
+
+      <h2>Por categoria de consumo</h2>
+      
+      <div class="tabela_container">
+        <div class="tabela1">
+          <canvas id="tab1" width="300px" height="300px"></canvas>
+        </div>
       </div>
 
       <h2>Por tipo de uso de solo</h2>
-      <div id="chart"></div>
 
-      <div>
-        <table class="tabela2">
-          <tr>
-            <td><img src="../assets/img/icons/areas-construtivas.png" class="icon"></td>
-            <td><img src="../assets/img/icons/areas-cultivo.png" class="icon"></td>
-            <td><img src="../assets/img/icons/areas-pastagem.png" class="icon"></td>
-            <td><img src="../assets/img/icons/areas-pesca.png" class="icon"></td>
-            <td><img src="../assets/img/icons/areas-florestais.png" class="icon"></td>
-            <td><img src="../assets/img/icons/pegada-carbono.png" class="icon"></td>
-          </tr>
-          <tr>
-            <td>Áreas<p>Construídas</p>
-            </td>
-            <td>Áreas<p>de Cultivo</p>
-            </td>
-            <td>Áreas de<p>Pastagem</p>
-            </td>
-            <td>Áreas de<p>Pesca</p>
-            </td>
-            <td>Áreas<p>Florestais</p>
-            </td>
-            <td>Pegada<p>de Carbono</p>
-            </td>
-          </tr>
-        </table>
-      </div>
+        <div class="tabela_container">
+          <div class="tabela2">
+            <canvas id="tab2" width="300px" height="300px"></canvas>
+          </div>
+        </div>
+
       <button class="btn">CONTINUAR</button>
     </div>
   </main>

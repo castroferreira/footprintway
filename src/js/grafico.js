@@ -1,33 +1,105 @@
-var chart = c3.generate({
-  bindto: '#chart',
-  data: {
-    columns: [
-      ['data1', 30, 200, 100, 400, 150, 250],
-      ['data2', 50, 20, 10, 40, 15, 25]
-    ],
-    axes: {
-      data2: 'y2'
+var ctx = document.getElementById('tab1').getContext('2d');
+var tab1 = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Alimentação', 'Habitação', 'Mobilidade', 'Bens', 'Serviços'],
+        datasets: [{
+            data: [5, 1, 3, 5, 2],
+            backgroundColor: [
+                '#C8E8E4',
+                '#C8E8E4',
+                '#C8E8E4',
+                '#C8E8E4',
+                '#C8E8E4'
+            ],
+            borderColor: [
+                '#85CAC3',
+                '#85CAC3',
+                '#85CAC3',
+                '#85CAC3',
+                '#85CAC3'
+            ],
+            borderWidth: 2,
+            hoverBackgroundColor: '#85CAC3',
+            hoverBorderColor: '#85CAC3',
+        }]
     },
-    types: {
-      data2: 'bar'
-    }
-  },
-  axis: {
-    y: {
-      label: {
-        text: 'Y Label',
-        position: 'outer-middle'
-      },
-      tick: {
-        format: d3.format("$,") // ADD
-      }
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false,
+                    beginAtZero: true
+
+                },
+                gridLines: {
+                    display: false,
+                    drayBorder: false
+                }
+            }],
+            xAxes:[{
+                gridLines: {
+                    display: false,
+                    drayBorder: false
+                }
+            }]
+        },
+        legend: {
+            display: false
+        }
+    
+}})
+
+Chart.defaults.global.defaultFontSize = 10;
+
+var ctx = document.getElementById('tab2').getContext('2d');
+var tab2 = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [['Áreas', 'Construídas'], ['Áreas', 'de', 'Cultivo'], ['Áreas', 'de', 'Pastagem'], ['Áreas', 'de', 'Pesca'], ['Áreas', 'Florestais'], ['Pegada', 'de', 'Carbono']],
+        datasets: [{
+            data: [5, 1, 3, 5, 2, 4],
+            backgroundColor: [
+              '#C8E8E4',
+              '#C8E8E4',
+              '#C8E8E4',
+              '#C8E8E4',
+              '#C8E8E4',
+              '#C8E8E4'
+          ],
+          borderColor: [
+              '#85CAC3',
+              '#85CAC3',
+              '#85CAC3',
+              '#85CAC3',
+              '#85CAC3',
+              '#85CAC3'
+          ],
+            borderWidth: 2,
+            hoverBackgroundColor: '#85CAC3',
+            hoverBorderColor: '#85CAC3',
+        }]
     },
-    y2: {
-      show: true,
-      label: {
-        text: 'Y2 Label',
-        position: 'outer-middle'
-      }
-    }
-  }
-});
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false,
+                    beginAtZero: true
+                },
+                gridLines: {
+                    display: false,
+                    drayBorder: false
+                }
+            }],
+            xAxes:[{
+                gridLines: {
+                    display: false,
+                    drayBorder: false
+                }
+            }]
+        },
+        legend: {
+            display: false,
+        }   
+}})
