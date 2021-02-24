@@ -68,10 +68,11 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="card mt-4" style="width: 18rem;">
+          <a href="#"><button class="btn" id="apagar"><img
+            src="../assets/img/icons/apagar.png" height="30px"></button></a>
           <div class="card-body">
-            <h5 class="card-title">Dica do Dia</h5>
-            <p class="card-text">Transforme coisas velhas em novas com um pouco de criatividade e materiais que tem em
-              casa.</p>
+            <h5 class="card-title" id="titulo_dica"></h5>
+            <p class="card-text" id="descricao_dica"></p>
 
           </div>
         </div>
@@ -94,7 +95,7 @@
               <div class="modal-body">
                 <h5 class="subtitulo2">Título</h5>
                 <div class="input-group mb-3">
-                  <input type="text" id="titulo" class="form-control" aria-label="Sizing example input"
+                  <input type="text" id="titulo" class="form-control" placeholder="Ex: Dica para poupar água" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default">
                 </div>
                 <h5 class="subtitulo3">Descrição</h5>
@@ -126,7 +127,7 @@
           </div>
 
           <div class="col-3 navbar-inferior text-align-center nav-hover">
-            <a href="#">
+            <a href="./dicas.html">
               <img src="../assets/img/icons/dica.png">
               <p class="margem-navbar">Dicas</p>
             </a>
@@ -189,9 +190,10 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    
+    
   </script>
-  <script src="../js/firebase.js"></script>
+  <script src="../js/dicasdata.js"></script>
 
 </body>
 
