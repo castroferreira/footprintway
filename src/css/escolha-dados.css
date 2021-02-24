@@ -426,3 +426,10 @@ iframe {
     opacity: 1;
   }
 }
+
+.a2 {
+  font-family: titulo;
+  outline: none;
+  text-decoration: none;
+  color: var(--azul-botoes)
+}

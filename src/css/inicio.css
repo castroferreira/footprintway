@@ -51,3 +51,10 @@ body {
     font-family: 'corpo-texto';
     font-weight: bold;
 }
+
+a {
+    font-family: titulo;
+    outline: none;
+    text-decoration: none;
+    color: var(--azul-botoes)
+}
