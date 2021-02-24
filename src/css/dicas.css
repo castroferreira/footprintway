@@ -117,10 +117,12 @@ body {
   right: 16px;
   font-size: 18px;
 }
-#apagar {
+.apagar {
   position: absolute;
   right: 16px;
   font-size: 18px;
+  border-style: hidden;
+  background-color: transparent;
 }
 
 .modal-body {
