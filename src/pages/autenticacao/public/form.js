@@ -16,8 +16,3 @@
 		const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));	
 	}
-
-	function errData(err){​​​​​
-		console.log('Error');
-		console.log(err);
-	}​​​​​
