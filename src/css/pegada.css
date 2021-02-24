@@ -35,6 +35,9 @@ body {
     margin-right: auto;
 }
 
+a:link {
+    text-decoration: none;
+}
 
 /* calcula-pegada.html */
 
