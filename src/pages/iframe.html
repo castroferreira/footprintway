@@ -1,27 +1,115 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/escolha-dados.css">
+    
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+        <title>GFN</title>
+    </head>
 
 <body>
-    <div>
-        <div class="row">
-            <div class="col-sm-12">
-                <iframe src="https://www.footprintcalculator.org/" 
-                title="Global Footprint Network" height="800" width="355"></iframe>
-            </div>
-        </div>
+    
+    
+    <div class="limiter">
+<div class="row">
+    <div class="col-sm-12">
+        <iframe id="iframe" src="https://www.footprintcalculator.org/" 
+        title="Global Footprint Network" frameborder ="0" height="600" width="375"></iframe>
     </div>
+</div>
+        
 
+		<div class="container-login100" id="formgf">
+			<div class="wrap-login100  p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w" onsubmit="return false;" method="post">
+
+					<span class="login100-form-title p-5  titulo">
+						Insere aqui os teus resultados
+					</span>
+
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="planetas" min="0" max="10" name="quantity"
+							placeholder="Número de planetas">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="pegada_carbono" min="0" max="15"
+							placeholder="Pegada de carbono">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="alimentacao" min="0" max="7"
+							placeholder="Alimentação">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="quantity" name="quantity" min="0" max="7" 
+                        placeholder="Habitação">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="mobilidade" min="0" max="7" placeholder="Mobilidade">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" min="0" max="7" id="bens" placeholder="Bens">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="servicos" min="0" max="7"
+							placeholder="Serviços">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="areas_construidas" min="0" max="7"
+							placeholder="Áreas construídas">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="areas_cultivo" min="0" max="7"
+							placeholder="Áreas de cultivo">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="areas_pastagem" min="0" max="7"
+							placeholder="Áreas de pastagem">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="areas_pesca" min="0" max="7"
+							placeholder="Áreas de pesca">
+						<span class="focus-input100"></span>
+					</div>
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+						<input class="input100" type="number" id="areas_florestais" min="0" max="7"
+							placeholder="Áreas florestais">
+						<span class="focus-input100"></span>
+					</div>
+                 
+
+					<div class="centrar4" disabled="true">
+						<button id="btn-login" class="login100-form-btn"><a class="a2" href="../pages/pegada-ecologica.html">CONTINUAR</a></button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
 
 
 
