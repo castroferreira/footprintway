@@ -32,24 +32,25 @@
 
 
 					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
-						<input class="input100" type="email" id="email" placeholder="Email">
+						<input class="input100" type="email" id="email" placeholder="Email" required>
 						<span class="focus-input100"></span>
 					</div>
 
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
-						<input class="input100" type="password" id="password" placeholder="password">
+					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma palavra-passe">
+						<input class="input100" type="password" id="password" placeholder="password" required>
 						<span class="focus-input100"></span>
 					</div>
-
 
 					<div class="centrar4" disabled="true">
-						<button id="btn-login" class="login100-form-btn" type="button" onclick="signUp()" >REGISTAR</button>
+						<button id="btn-login" class="login100-form-btn" type="button"
+							onclick="signUp()">REGISTAR</button>
+
 					</div>
-	
+
 			</div>
 		</div>
-	</div>                                                                                                                            
+	</div>
 
 	<script>
 		// Your web app's Firebase configuration
@@ -68,9 +69,8 @@
 		firebase.initializeApp(firebaseConfig);
 
 		const auth = firebase.auth();
-
 	</script>
-
+	<script src="../../../js/main.js"></script>
 </body>
 
 </html>

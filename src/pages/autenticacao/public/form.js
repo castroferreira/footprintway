@@ -38,7 +38,3 @@ function signIn(){
 			);
 	//alert("Signed In " + email.value);
 }
-
-
-
- 
