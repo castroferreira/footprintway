@@ -8,15 +8,14 @@ const dados = document.getElementById("dados");
 const database = firebase.database();
 
 
-
 dados.addEventListener('click', (e) =>{
     e.preventDefault();
-    database.ref('/users/').set({
-        username_dado: username.value,
-        idade_dado: idade.value,
-        genero_dado: genero.value,
-        curso_dado: curso.value,
-        departamento_dado: departamento.value
+    database.ref('/users/' + username.value).set({
+       nome: username.value,
+       idade_dados: idade.value,
+       genero_dado: genero.value,
+       curso_dados: curso.value,
+       departamento_dado: departamento.value
+
     });
 });
-
