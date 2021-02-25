@@ -56,7 +56,7 @@ var ctx = document.getElementById('tab2').getContext('2d');
 var tab2 = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: [['Áreas', 'Construídas'], ['Áreas', 'de', 'Cultivo'], ['Áreas', 'de', 'Pastagem'], ['Áreas', 'de', 'Pesca'], ['Áreas', 'Florestais'], ['Pegada', 'de', 'Carbono']],
+        labels: [['Áreas', 'Construídas'], ['Áreas', 'de', 'Cultivo'], ['Áreas', 'de', 'Pastagem'], ['Áreas', 'de', 'Pesca'], ['Áreas', 'Florestais']],
         datasets: [{
             data: [5, 1, 3, 5, 2, 4],
             backgroundColor: [
@@ -65,7 +65,6 @@ var tab2 = new Chart(ctx, {
               '#C8E8E4',
               '#C8E8E4',
               '#C8E8E4',
-              '#C8E8E4'
           ],
           borderColor: [
               '#85CAC3',
@@ -73,7 +72,6 @@ var tab2 = new Chart(ctx, {
               '#85CAC3',
               '#85CAC3',
               '#85CAC3',
-              '#85CAC3'
           ],
             borderWidth: 2,
             hoverBackgroundColor: '#85CAC3',
