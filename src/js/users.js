@@ -5,11 +5,13 @@ const curso = document.getElementById("curso");
 const departamento = document.getElementById("departamento");
 const dados = document.getElementById("dados");
 
+
 const database = firebase.database();
 
+const database = firebase.database().ref("users");
 
 
-dados.addEventListener('click', (e) =>{
+dados.addEventListener('click', (e) => {
     e.preventDefault();
     database.ref('/users/').set({
         username_dado: username.value,
@@ -19,4 +21,3 @@ dados.addEventListener('click', (e) =>{
         departamento_dado: departamento.value
     });
 });
-
