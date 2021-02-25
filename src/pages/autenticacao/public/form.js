@@ -15,8 +15,6 @@ function signUp(){
 			window.location.replace("../../calcula-pegada.html")
 		}
 			);
-	
-
 	//alert("Signed Up");
 }
 
@@ -40,3 +38,7 @@ function signIn(){
 			);
 	//alert("Signed In " + email.value);
 }
+
+
+
+ 
