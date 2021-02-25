@@ -31,3 +31,5 @@ btn.addEventListener('click', (e) => {
         resultado_areas_florestais: areas_florestais.value
     });
 });
+
+
