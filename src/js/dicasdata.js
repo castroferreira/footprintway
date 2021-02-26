@@ -1,12 +1,12 @@
 const titulo = document.getElementById("titulo");
 const descricao = document.getElementById("descricao");
 const publicar = document.getElementById("publicar");
-const apagar = document.getElementById("apagar");
+//const apagar = document.getElementById("apagar");
 const database = firebase.database().ref("dicas");
+const datadicas = firebase.database().ref("Dicas do dia");
 
 
-
-publicar.addEventListener('click', (e) =>{
+publicar.addEventListener('click', (e) => {
     e.preventDefault();
     database.child(titulo.value).set({
         dica_titulo: titulo.value,
@@ -14,25 +14,46 @@ publicar.addEventListener('click', (e) =>{
     });
 });
 
-database.on("child_added", snap => {
-    //alert(snap.val());
-    var nome = snap.child("dica_titulo").val();
-    var legenda = snap.child("dica_descricao").val();
+//$.each(titulo.value, function (index, dicas) {
 
-    $("#cardbody").append('<a href="#">'+'<button class="apagar" id="'+ apagar +'">'+
-    '<img src="../assets/img/icons/apagar.png" height="30px">'+'</button>'+'</a>'+
-    '<h5 class="card-title">' + nome + '</h5>'+
-    '<p class="card-text" id="descricao_dica">'+ legenda +'</p>');
+database.once('value', function (snapshot) {
+            //alert(snap.val());
+            snapshot.forEach(function(snap){
+            var nome = snap.child("dica_titulo").val();
+            var legenda = snap.child("dica_descricao").val();
+        
+                $("#dicauser").append(
+                   '<div class="row"> <div class="col-sm-12"><div class="card mt-4" style="width: 18rem;">'+
+                   '<div class="card-body" id="cardbody">'+
+                   '<a href="#"><button class="apagar" id="" onclick="apagar()">'+
+                   '<img src="../assets/img/icons/apagar.png" height="30px">'+
+                   '</button></a><h5 class="card-title">'+nome+'</h5>'+
+                   '<p class="card-text" id="descricao_dica">'+legenda+'</p></div></div></div></div>'
+                );
+                });
+            });
 
-;})
+
+            
+
+    datadicas.once('value', function (snapshot) {
+                //alert(snap.val());
+                snapshot.forEach(function(snap){
+                var nome = snap.child("nome").val();
+                var descricao = snap.child("descricao").val();
+            
+                    $("#cardia").append(
+                       '<div class="row">'+
+                       '<div class="col-sm-12">'+
+                    '<div class="card border-success mb-3 mt-3" style="width: 18rem;">'+
+                       '<div class="card-body" id="cardbody">'+
+                       '</button></a><h5 class="card-title">'+nome+'</h5>'+
+                       '<p class="card-text" id="descricao_dica">'+descricao+'</p></div></div></div></div>'
+                    );
+                    });
+                });
 
 
-apagar.addEventListener('click', e => {
-    e.preventDefault();
-    rootRef.child(dica_titulo).remove().then(() => {
-window.alert('Dica apagada!');
-    })
-.catch.error(error => {
-    console.error(error);
-});
-});
+           function apagar(){
+             rootRef.child(titulo).remove();
+          };

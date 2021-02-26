@@ -6,14 +6,12 @@ const departamento = document.getElementById("departamento");
 const dados = document.getElementById("dados");
 
 
-const database = firebase.database();
-
-const database = firebase.database().ref("users");
+const data = firebase.database();
 
 
 dados.addEventListener('click', (e) => {
     e.preventDefault();
-    database.ref('/users/').set({
+    data.ref('/users/', username.value).set({
         username_dado: username.value,
         idade_dado: idade.value,
         genero_dado: genero.value,
