@@ -101,3 +101,4 @@ var tab2 = new Chart(ctx, {
             display: false,
         }   
 }})
+

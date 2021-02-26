@@ -97,12 +97,17 @@ a:link {
 
 /*resultados*/
 
-.voltar{
+#voltar{
     box-align: left;
     margin-left: 5%;
     height: 20px;
     width: 20px;
     margin-bottom: 20px;
+    /*background: url('C:\Users\Utilizador\Documents\GitHub\footprintway\src\assets\img\icons\voltar.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border: none;*/
 }
 
 h1{
