@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="../../../css/estilos-dani.css">
 	<link rel="stylesheet" href="../../../css/escolha-dados.css">
 	<script src="../../autenticacao/public/form.js"></script>
+	<script src="../../../js/show-pass.js"></script>
 </head>
 
 <body>
@@ -37,13 +38,18 @@
 					</div>
 
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma palavra-passe">
-						<input class="input100" type="password" id="password" placeholder="password" required>
+					<div class="wrap-input100 validate-input mb-2" data-validate="Introduza uma palavra-passe">
+						<input class="input100" type="password" id="password" name="password" placeholder="Password"
+							required>
+						<!-- An element to toggle between password visibility -->
 						<span class="focus-input100"></span>
 					</div>
 
+					<div>
+						<input type="checkbox" onclick="myFunction()"> <span class="">Mostrar palavra-passe</span>
+					</div>
 
-					<div class="centrar4" disabled="true">
+					<div class="centrar4 mt-4" disabled="true">
 						<button id="btn-login" class="login100-form-btn" type="button" onclick="signIn()">LOGIN</button>
 					</div>
 
