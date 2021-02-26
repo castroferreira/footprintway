@@ -41,11 +41,22 @@ var tab1 = new Chart(ctx, {
                 gridLines: {
                     display: false,
                     drayBorder: false
-                }
+                },
+                ticks: {
+                    autoSkip: false,
+                    maxRotation: 0,
+                    minRotation: 0
+                },
             }]
         },
         legend: {
             display: false
+        },
+        tooltips: {
+            costum:
+            function getBody(bodyItem) {
+                return bodyItem.lines;
+            }
         }
     
 }})
@@ -94,6 +105,11 @@ var tab2 = new Chart(ctx, {
                 gridLines: {
                     display: false,
                     drayBorder: false
+                },
+                ticks: {
+                    autoSkip: false,
+                    maxRotation: 0,
+                    minRotation: 0
                 }
             }]
         },
@@ -101,3 +117,4 @@ var tab2 = new Chart(ctx, {
             display: false,
         }   
 }})
+

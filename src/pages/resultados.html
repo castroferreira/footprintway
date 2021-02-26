@@ -25,16 +25,9 @@
 
   <main class="res">
     <div class="container col-sm-12 conteudo2">
-
-      <img src="../assets/img/icons/voltar.png" class="voltar"> <!--onclick="voltar()"-->
-      <!--<script>
-        function voltar() {
-          window.history.back();
-          console.log("funciona");
-        }
-      </script>-->
-
       <h1>Os teus resultados</h1>
+
+      <button onclick="voltarAtras()" id="voltar" style="background: url('../assets/img/icons/voltar.png'); background-size: contain; border:none;"></button>
 
       <h2>Por categoria de consumo</h2>
 
@@ -60,7 +53,13 @@
   <footer>
 
   </footer>
-  
+
+  <script>
+    function voltarAtras() {
+      window.history.back();
+    }
+  </script>
+
   <script src="../js/grafico.js"></script>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
