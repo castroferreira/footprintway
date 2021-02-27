@@ -57,6 +57,22 @@ body {
     padding-left: 42px;
 }
 
+.padding-posicao2 {
+    padding-left: 25px;
+}
+
+.padding-posicao3 {
+    padding-left: 25px;
+}
+
+.padding-posicao4 {
+    padding-left: 7px;
+}
+
+.padding-posicao6 {
+    padding-left: 26px;
+}
+
 .padding-icone-1 {
     padding-top: 100px;
 }
@@ -140,3 +156,4 @@ a {
     text-decoration: none;
     color: var(--texto)
 }
+
