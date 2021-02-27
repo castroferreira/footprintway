@@ -53,10 +53,14 @@ var tab1 = new Chart(ctx, {
             display: false
         },
         tooltips: {
-            costum:
-            function getBody(bodyItem) {
-                return bodyItem.lines;
-            }
+            displayColors: false,
+            backgroundColor: '#313333',
+            title: null,
+            titleFontColor: '#F5F6F5',
+            bodyFontColor: '#F5F6F5',
+            callbacks: {
+                title: function() {}
+             }
         }
     
 }})
@@ -115,6 +119,19 @@ var tab2 = new Chart(ctx, {
         },
         legend: {
             display: false,
+        },
+        tooltips: {
+            displayColors: false,
+            backgroundColor: '#313333',
+            title: null,
+            titleFontColor: '#F5F6F5',
+            bodyFontColor: '#F5F6F5',
+            callbacks: {
+                title: function() {}
+             }
         }   
 }})
+
+Chart.defaults.global.defaultFontSize= 11;
+Chart.defaults.global.defaultFontColor= '#313333';
 

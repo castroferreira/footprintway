@@ -70,13 +70,18 @@ a:link {
     margin-bottom: 10%;
 }
 
+.peg_pc{
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
 .img_mundo {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .resultado_pe {
@@ -85,15 +90,29 @@ a:link {
     margin-bottom: 5%;
 }
 
+.resultado_pc{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
 .conteudo {
-    margin-top: 40%;
+    margin-top: 30%;
     margin-bottom: 10%;
     text-align: center;
 }
 
 .bom_cam {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
+
+table{
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: separate; 
+    border-spacing: 10px;
+}
+
 
 /*resultados*/
 
@@ -103,11 +122,7 @@ a:link {
     height: 20px;
     width: 20px;
     margin-bottom: 20px;
-    /*background: url('C:\Users\Utilizador\Documents\GitHub\footprintway\src\assets\img\icons\voltar.png');
-    background-size: cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    border: none;*/
+    margin-top: 5%;
 }
 
 h1{
