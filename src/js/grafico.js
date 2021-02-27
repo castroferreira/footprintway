@@ -73,7 +73,7 @@ var tab2 = new Chart(ctx, {
     data: {
         labels: [['Áreas', 'Construídas'], ['Áreas', 'de', 'Cultivo'], ['Áreas', 'de', 'Pastagem'], ['Áreas', 'de', 'Pesca'], ['Áreas', 'Florestais']],
         datasets: [{
-            data: [5, 1, 3, 5, 2, 4],
+            data: [5, 1, 3, 5, 2],
             backgroundColor: [
               '#C8E8E4',
               '#C8E8E4',
