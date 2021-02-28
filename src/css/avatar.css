@@ -1,7 +1,7 @@
 @import './style.css';
 
 /* SLIDE AVATARES */
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -140,4 +140,124 @@ body {
 #slide7 {
     background-size: cover;
     background-image: url('../../src/assets/img/avatar_h3.png')
+}
+
+.avatar-user:after {
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.dropdown-content.active {
+    display: block;
+}
+
+.dropdown-avatar:after {
+    clear: both;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding-left: 120px;
+}
+
+.avatar-user {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: block;
+}
+
+.avatar-user:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+
+
+.avatar-user img {
+    width: 100px;
+}
+
+#avatar-principal {
+    padding-top: 10px;
+}
+
+#escolher {
+    margin-top: 250px;
+}
+
+.dropdown {
+    position: absolute;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+.dropdown-items {
+    list-style: none;
+}
+
+.dropdown-content,
+.dropdown-avatar {
+    margin: 0;
+    padding: 0;
+    margin-left: -65px;
+    margin-right: -10px;
+
+}
+
+.dropdown-content {
+    top: 100%;
+    left: 0;
+    min-width: 10rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    display: block;
+}
+
+.dropdown-content.active {
+    display: block;
+}
+
+.avatar-items {
+    display: inline-block;
+    list-style: none;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.avatar-items img {
+    width: 75px;
+    vertical-align: 0;
+}
+
+#slider {
+    position: relative;
 }
