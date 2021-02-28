@@ -12,6 +12,8 @@ publicar.addEventListener('click', (e) => {
         dica_titulo: titulo.value,
         dica_descricao: descricao.value
     });
+    window.alert("Dica publicada com sucesso!")
+    document.location.reload(true);
 });
 
 //$.each(titulo.value, function (index, dicas) {
@@ -60,23 +62,21 @@ datadicas.once('value', function (snapshot) {
 
 $(document).ready(function(){
     $(document).on('click','.apagar',function(){
-       //code here
+        const deedRef = firebase.database().ref('/dicas');
+        deedRef.limitToLast(1).once("value", (snapshot) => {
+            snapshot.forEach((deedSnapshot) =>{
+                 deedSnapshot.ref.remove();
+            })
+            document.location.reload(true);
+        })
+       
+   
        //alert(this.id);
-       alert($(this).attr('id'));
+      //alert($(this).attr('id'));
     });
+    
 });
 
 
 
 
-
-//document.getElementById('apagar').addEventListener('click', function (){
-//  alert("apagar");
-// ready();
-//firebase.database().ref("dicas/dica_titulo").remove();
-//});
-
-
-//function apagar(){
-//rootRef.child(titulo).remove();
-//};
