@@ -150,10 +150,19 @@ body {
     color: var(--verde);
 }
 
+.active{
+    color: var(--verde);
+}
 
 a {
     outline: none;
     text-decoration: none;
     color: var(--texto)
 }
+
+p{
+    font-family: 'corpo-texto';
+      color: var(--texto)
+  }
+  
 
