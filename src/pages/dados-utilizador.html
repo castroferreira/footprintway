@@ -23,39 +23,40 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100  p-b-90">
-				<form class="login100-form validate-form flex-sb flex-w"  method="post">
+				<form id="form" action="#" class="login100-form validate-form flex-sb flex-w" method="post">
+					<fieldset>
+						<span class="login100-form-title pb-5 titulo">
+							Insere aqui os teus dados
+						</span>
 
-					<span class="login100-form-title pb-5 titulo">
-						Insere aqui os teus dados
-					</span>
+						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
+							<input class="input100" type="text" id="nome-utilizador" name="username"
+								placeholder="Nome de utlizador">
+							<span class="focus-input100"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
-						<input class="input100" type="text" id="nome-utilizador" name="username"
-							placeholder="Nome de utlizador">
-						<span class="focus-input100"></span>
-					</div>
+						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
+							<input class="input100" type="number" id="quantity" name="quantity" min="1" max="150"
+								placeholder="Idade">
+							<span class="focus-input100"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
-						<input class="input100" type="number" id="quantity" name="quantity" min="1" max="150" placeholder="Idade">
-						<span class="focus-input100"></span>
-					</div>
+						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
+							<input class="input100" type="text" id="genero" name="gender" placeholder="Género">
+							<span class="focus-input100"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
-						<input class="input100" type="text" id="genero" name="gender" placeholder="Género">
-						<span class="focus-input100"></span>
-					</div>
+						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um Curso">
+							<input class="input100" type="text" id="curso" name="curso" placeholder="Curso">
+							<span class="focus-input100"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um Curso">
-						<input class="input100" type="text" id="curso" name="curso" placeholder="Curso">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input mb-5" data-validate="Introduza um Departamento">
-						<input class="input100" type="text" id="departamento" name="departamento"
-							placeholder="Departamento">
-						<span class="focus-input100"></span>
-					</div>
-
+						<div class="wrap-input100 validate-input mb-5" data-validate="Introduza um Departamento">
+							<input class="input100" type="text" id="departamento" name="departamento"
+								placeholder="Departamento">
+							<span class="focus-input100"></span>
+						</div>
+					</fieldset>
 					<div class="centrar4" disabled="true">
 						<button id="dados" class="login100-form-btn">CONTINUAR</button>
 					</div>
@@ -66,34 +67,35 @@
 	</div>
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-database.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-database.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+	<!-- TODO: Add SDKs for Firebase products that you want to use
    https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-	apiKey: "AIzaSyAqgnHG58TJwd5ZaCbCSWwchPEWFlyThIE",
-	authDomain: "footprintway.firebaseapp.com",
-	databaseURL: "https://footprintway-default-rtdb.europe-west1.firebasedatabase.app",
-	projectId: "footprintway",
-	storageBucket: "footprintway.appspot.com",
-	messagingSenderId: "705745529125",
-	appId: "1:705745529125:web:4872c408f265f5c77cd2cc",
-	measurementId: "G-QWL5XF7E6T"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
-  
-</script>
-<script src="../js/form_user.js"></script>
-
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyAqgnHG58TJwd5ZaCbCSWwchPEWFlyThIE",
+			authDomain: "footprintway.firebaseapp.com",
+			databaseURL: "https://footprintway-default-rtdb.europe-west1.firebasedatabase.app",
+			projectId: "footprintway",
+			storageBucket: "footprintway.appspot.com",
+			messagingSenderId: "705745529125",
+			appId: "1:705745529125:web:4872c408f265f5c77cd2cc",
+			measurementId: "G-QWL5XF7E6T"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"
+		integrity="sha512-bE0ncA3DKWmKaF3w5hQjCq7ErHFiPdH2IGjXRyXXZSOokbimtUuufhgeDPeQPs51AI4XsqDZUK7qvrPZ5xboZg=="
+		crossorigin="anonymous"></script>
+	<script src="../js/form_user.js"></script>
+	<script src="../js/validarInfo.js"></script>
 
 
 </body>
