@@ -12,7 +12,7 @@ function signUp(){
 
 		promise.then(function() {
 			alert("Registo efetuado com sucesso!")
-			window.location.replace("../../calcula-pegada.html")
+			window.location.replace("../../dados-utilizador.html")
 		}
 			);
 	//alert("Signed Up");
