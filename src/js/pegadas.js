@@ -32,7 +32,7 @@ info.once('value', function (snapshot) {
         '</div>' 
         );
 
-        $("#table").append(
+        /*$("#table").append(
             '<tbody>' +
             '<tr> ' +
                  '<th scope="row">Idade</th>' +
@@ -51,7 +51,7 @@ info.once('value', function (snapshot) {
                 '<td>'+ departamento_dado +'</td>' +
             '</tr>' +
             '</tbody>' 
-            );
+            );*/
         });
     });
 

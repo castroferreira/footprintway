@@ -18,16 +18,4 @@ dados.addEventListener('click', (e) =>{
        departamento_dado: departamento.value
 
     });
-    const promise = auth.createUser(email.value, password.value);
-	promise.catch(function() {
-		e => alert(e.message);
-		alert("Houve um erro! Volte a inserir o email ou a password.")
-	}
-		);
-
-		promise.then(function() {
-			alert("Registo efetuado com sucesso!")
-			window.location.replace("../../escolher-avatar.html")
-		}
-			);
 });
