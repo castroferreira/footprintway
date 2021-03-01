@@ -44,3 +44,9 @@
     font-size: 30px;
     color: var(--texto)
 }
+
+.corpo-texto {
+    font-family: 'corpo-texto';
+    text-align: center;
+    color: var(--texto)
+}

@@ -17,54 +17,6 @@ body {
     margin-right: auto;
 }
 
-.btn {
-    border: 3px solid var(--azul-botoes);
-    border-radius: 20px;
-    background-color: var(--nav-cards);
-    color: var(--azul-botoes);
-    font-size: 20px;
-    height: 50px;
-    width: 350px;
-    text-align: center;
-    font-family: var(--texto);
-    margin-top: 15px;
-    font-family: 'corpo-texto';
-    font-weight: bold;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-/* calcula-pegada.html */
-
-.texto_cp {
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 5px;
-}
-
-.fundo {
-    background-color: var(--nav-cards);
-    border-radius: 30px;
-    border: 15px solid var(--nav-cards);
-    margin-top: 63px;
-    margin-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.tx_e_btn {
-    margin-top: 15%;
-    margin-bottom: 10%;
-}
-
-/* pegada-ecologica.html */
-
 .peg_ec {
     font-size: 20px;
     margin-bottom: 10%;
@@ -73,15 +25,6 @@ a:link {
 .peg_pc{
     font-size: 20px;
     margin-bottom: 10%;
-}
-
-.img_mundo {
-    height: 250px;
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
 }
 
 .resultado_pe {
@@ -96,14 +39,8 @@ a:link {
     margin-bottom: 5%;
 }
 
-.conteudo {
-    margin-top: 30%;
-    margin-bottom: 10%;
-    text-align: center;
-}
-
 .bom_cam {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 table{
@@ -112,9 +49,6 @@ table{
     border-collapse: separate; 
     border-spacing: 10px;
 }
-
-
-/*resultados*/
 
 #voltar{
     box-align: left;
@@ -163,3 +97,6 @@ h2{
     margin-bottom: 30px;
 }
 
+.cat_con{
+    margin-top: 30px;
+}

@@ -176,6 +176,11 @@ a {
   color: var(--texto)
 }
 
+p{
+  font-family: 'corpo-texto';
+    color: var(--texto)
+}
+
 .form-control {
   border-radius: 10px;
 }

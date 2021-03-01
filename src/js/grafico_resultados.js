@@ -172,10 +172,10 @@ Chart.defaults.global.defaultFontColor = '#313333';
     //snapshot.forEach(function (snap) {
 
 
-    function addData(chart, data) {
+    function addData(chart, data1, data2, data3, data4, data5) {
         //chart.data.labels.push(label);
         chart.data.datasets.forEach( function (dataset) {
-            dataset.data.push(data);
+            dataset.data.push(data1, data2, data3, data4, data5);
             //dataset.bars.forEach(function (bar) {
               //  ctx.fillText(bar.value, bar.x, bar.y - 5);
             //});
@@ -229,7 +229,12 @@ Chart.defaults.global.defaultFontColor = '#313333';
 
         addData(tab1, resultado_alimentacao, resultado_habitacao,
             resultado_mobilidade, resultado_bens, resultado_servicos);
+
 console.log(resultado_alimentacao);
+console.log(resultado_habitacao);
+console.log(resultado_mobilidade);
+console.log(resultado_bens);
+console.log(resultado_servicos);
     });
 
 
