@@ -1,3 +1,8 @@
+const planetas = document.getElementById("planetas");
+const pegada_carbono = document.getElementById("pegada_carbono");
+
+const database = firebase.database().ref("resultados");
+
 database.once('value', function (snapshot) {
     snapshot.forEach(function (snap) {
         var pegadaecologica = snap.child("resultado_planetas").val();
@@ -12,5 +17,4 @@ database.once('value', function (snapshot) {
         );
     });
 });
-
 
