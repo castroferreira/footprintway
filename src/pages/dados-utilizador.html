@@ -15,7 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-	<title>Escolher dados</title>
+	<title>Inserir dados</title>
 </head>
 
 <body>
@@ -24,44 +24,43 @@
 		<div class="container-login100">
 			<div class="wrap-login100  p-b-90">
 				<form id="form" action="#" class="login100-form validate-form flex-sb flex-w" method="post">
-					<fieldset>
-						<span class="login100-form-title pb-5 titulo">
-							Insere aqui os teus dados
-						</span>
 
-						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
-							<input class="input100" type="text" id="nome-utilizador" name="username"
-								placeholder="Nome de utlizador">
-							<span class="focus-input100"></span>
-						</div>
+					<span class="login100-form-title pb-5 titulo">
+						Insere aqui os teus dados
+					</span>
 
-						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
-							<input class="input100" type="number" id="quantity" name="quantity" min="1" max="150"
-								placeholder="Idade">
-							<span class="focus-input100"></span>
-						</div>
+					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um utilizador">
+						<input class="input100" type="text" id="nome-utilizador" name="username"
+							placeholder="Nome de utlizador" required>
+						<span class="focus-input100"></span>
+					</div>
 
-						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
-							<input class="input100" type="text" id="genero" name="gender" placeholder="Género">
-							<span class="focus-input100"></span>
-						</div>
+					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
+						<input class="input100" type="number" id="quantity" name="quantity" min="1" max="150"
+							placeholder="Idade" required>
+						<span class="focus-input100"></span>
+					</div>
 
-						<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um Curso">
-							<input class="input100" type="text" id="curso" name="curso" placeholder="Curso">
-							<span class="focus-input100"></span>
-						</div>
+					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza uma idade">
+						<input class="input100" type="text" id="genero" name="gender" placeholder="Género" required>
+						<span class="focus-input100"></span>
+					</div>
 
-						<div class="wrap-input100 validate-input mb-5" data-validate="Introduza um Departamento">
-							<input class="input100" type="text" id="departamento" name="departamento"
-								placeholder="Departamento">
-							<span class="focus-input100"></span>
-						</div>
-					</fieldset>
+					<div class="wrap-input100 validate-input mb-3" data-validate="Introduza um Curso">
+						<input class="input100" type="text" id="curso" name="curso" placeholder="Curso" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input mb-5" data-validate="Introduza um Departamento">
+						<input class="input100" type="text" id="departamento" name="departamento"
+							placeholder="Departamento" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<p id="demo"></p>
+
 					<div class="centrar4" disabled="true">
-						<button id="dados" class="login100-form-btn">SUBMETER</button>
-						<button id="dados" class="login100-form-btn">
-							<a href="../pages/escolher-avatar.html">AVANÇAR
-							</a></button>
+						<button id="dados" class="login100-form-btn" onclick="validarDados()">AVANÇAR</button>
 					</div>
 
 				</form>
@@ -94,11 +93,7 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"
-		integrity="sha512-bE0ncA3DKWmKaF3w5hQjCq7ErHFiPdH2IGjXRyXXZSOokbimtUuufhgeDPeQPs51AI4XsqDZUK7qvrPZ5xboZg=="
-		crossorigin="anonymous"></script>
-	<script src="../js/form_user.js"></script>
-	<script src="../js/validarInfo.js"></script>
+	<script src="../js/validarDados.js"></script>
 
 
 </body>

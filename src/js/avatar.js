@@ -1,7 +1,7 @@
 $(document).ready(function (e) {
     $('.dropdown-content').toggleClass('active');
 
-    $('.carousel-items').click(function () {
+    $('.avatar-items').click(function () {
         $('.avatar-user').html($(this).html());
         $('.dropdown-content').toggleClass('active');
     });
@@ -10,6 +10,17 @@ $(document).ready(function (e) {
         $('.dropdown-content').toggleClass('active');
     });
 
+});
+
+const avatar = document.getElementById("avatar-user");
+
+const database = firebase.database();
+
+dados.addEventListener('click', (e) => {
+    e.preventDefault();
+    database.ref('users/' + avatar.value).set({
+        avatar: avatar.value
+    });
 });
 
 
