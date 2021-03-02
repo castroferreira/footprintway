@@ -12,7 +12,7 @@ database.once('value', function (snapshot) {
             '<table> <tr><td class="peg_ec">' + "Pegada Ecológica" + '</td>' +
             '<td class="resultado_pe" id="pontuacao">' + pegadaecologica + " pe" + '</td>' +
             '<tr><td class="peg_ec">' + "Pegada de Carbono" + '</td>' +
-            '<td class="resultado_pe" id="pontuacao">' + pegadacarbono + " pe" +  '</td>' +
+            '<td class="resultado_pc" id="pontuacao">' + pegadacarbono + " pc" +  '</td>' +
             '</tr> </table>'
         );
     });
