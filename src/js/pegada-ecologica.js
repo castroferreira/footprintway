@@ -10,9 +10,9 @@ database.once('value', function (snapshot) {
 
         $("#pegs").append(
             '<table> <tr><td class="peg_ec">' + "Pegada Ecológica" + '</td>' +
-            '<td class="resultado_pe" id="pontuacao">' + pegadaecologica + " pe" + '</td>' +
+            '<td class="resultado_pe pe" id="pontuacao">' + pegadaecologica + '</td>' +
             '<tr><td class="peg_ec">' + "Pegada de Carbono" + '</td>' +
-            '<td class="resultado_pc" id="pontuacao">' + pegadacarbono + " pc" +  '</td>' +
+            '<td class="resultado_pc pc" id="pontuacao">' + pegadacarbono + '</td>' +
             '</tr> </table>'
         );
     });

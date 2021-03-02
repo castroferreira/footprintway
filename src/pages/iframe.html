@@ -40,70 +40,75 @@
 
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="planetas" min="0" max="10" name="quantity"
-                            placeholder="Número de planetas">
+                            placeholder="Número de planetas" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="pegada_carbono" min="0" max="15"
-                            placeholder="Pegada de carbono">
+                            placeholder="Pegada de carbono" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
-                        <input class="input100" type="number" id="alimentacao" min="0" max="7"
-                            placeholder="Alimentação">
-                        <span class="focus-input100"></span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input mb-3" data-validate="">
-                        <input class="input100" type="number" id="quantity" name="quantity" min="0" max="7"
-                            placeholder="Habitação">
+                        <input class="input100" type="number" id="alimentacao" min="0" max="7" placeholder="Alimentação"
+                            required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
-                        <input class="input100" type="number" id="mobilidade" min="0" max="7" placeholder="Mobilidade">
+                        <input class="input100" type="number" id="habitacao" name="quantity" min="0" max="7"
+                            placeholder="Habitação" required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
-                        <input class="input100" type="number" min="0" max="7" id="bens" placeholder="Bens">
+                        <input class="input100" type="number" id="mobilidade" min="0" max="7" placeholder="Mobilidade"
+                            required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
-                        <input class="input100" type="number" id="servicos" min="0" max="7" placeholder="Serviços">
+                        <input class="input100" type="number" min="0" max="7" id="bens" placeholder="Bens" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input mb-3" data-validate="">
+                        <input class="input100" type="number" id="servicos" min="0" max="7" placeholder="Serviços"
+                            required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="areas_construidas" min="0" max="7"
-                            placeholder="Áreas construídas">
+                            placeholder="Áreas construídas" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="areas_cultivo" min="0" max="7"
-                            placeholder="Áreas de cultivo">
+                            placeholder="Áreas de cultivo" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="areas_pastagem" min="0" max="7"
-                            placeholder="Áreas de pastagem">
+                            placeholder="Áreas de pastagem" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="areas_pesca" min="0" max="7"
-                            placeholder="Áreas de pesca">
+                            placeholder="Áreas de pesca" required>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input mb-3" data-validate="">
                         <input class="input100" type="number" id="areas_florestais" min="0" max="7"
-                            placeholder="Áreas florestais">
+                            placeholder="Áreas florestais" required>
                         <span class="focus-input100"></span>
                     </div>
 
+                    <p id="demo"></p>
+
 
                     <div class="centrar4" disabled="true">
-                        <button id="btn" class="login100-form-btn">CONTINUAR</button>
+                        <button id="btn" class="login100-form-btn" onclick="validIframe()">CONTINUAR</button>
                     </div>
+
 
                 </form>
             </div>
@@ -135,6 +140,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src="../js/resultadosdata.js"></script>
+    <script src="../js/iframe.js"></script>
 
 </body>
 

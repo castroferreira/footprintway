@@ -1,7 +1,7 @@
 const planetas = document.getElementById("planetas");
 const pegada_carbono = document.getElementById("pegada_carbono");
 const alimentacao = document.getElementById("alimentacao");
-const quantidade = document.getElementById("quantity");
+const habitacao = document.getElementById("habitacao");
 const mobilidade = document.getElementById("mobilidade");
 const bens = document.getElementById("bens");
 const servicos = document.getElementById("servicos");
@@ -20,7 +20,7 @@ btn.addEventListener('click', (e) => {
         resultado_planetas: planetas.value,
         resultado_pegada_carbono: pegada_carbono.value,
         resultado_alimentacao: alimentacao.value,
-        resultado_quantidade: quantity.value,
+        resultado_habitacao: habitacao.value,
         resultado_mobilidade: mobilidade.value,
         resultado_bens: bens.value,
         resultado_servicos: servicos.value,
