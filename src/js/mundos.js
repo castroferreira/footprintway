@@ -7,7 +7,7 @@ function mensagens() {
         mundo.innerHTML = '<img src="../assets/img/mundo-feliz.png" class="img_mundo">' +
         '<p class="bom_cam">' + "Continua assim!" + '</p>'
 
-    } if (pegadaecologica > 1 && pegadaecologica <=2) {
+    } else if (pegadaecologica > 1 && pegadaecologica <=2) {
         mundo.innerHTML = '<img src="../assets/img/mundo-feliz.png" class="img_mundo">' +
         '<p class="bom_cam">' + "Estás num bom caminho!" + '</p>'
     } else {
