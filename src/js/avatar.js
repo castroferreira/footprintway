@@ -1,3 +1,7 @@
+/* const escolher = document.getElementById("escolher");
+const avatar = document.getElementById("avatar");
+const database = firebase.database(); */
+
 $(document).ready(function (e) {
     $('.dropdown-content').toggleClass('active');
 
@@ -12,44 +16,10 @@ $(document).ready(function (e) {
 
 });
 
-const avatar = document.getElementById("avatar-user");
-
-const database = firebase.database();
-
-dados.addEventListener('click', (e) => {
+/*
+escolher.addEventListener('click', (e) => {
     e.preventDefault();
     database.ref('users/' + avatar.value).set({
-        avatar: avatar.value
-    });
-});
-
-
-
-/* function pickAvatar(){
-
-    var avatar = document.getElementById("avatar-items");
-    const promise = auth.createUserWithEmailAndPassword(email.value, password.value); ?????
-    promise.catch(function() {
-        e => alert(e.message);
-        alert("Ocorreu um erro!")
-    }
-        );
-
-        promise.then(function() {
-            alert("Avatar escolhido com sucesso!")
-            window.location.replace("../pages/autenticacao/public/registo.html")
-        }
-            );
-} */
-
-/* const avatar = document.getElementById("avatar-items");
-
-const btn = document.getElementById("escolher");
-const database = firebase.database().ref("avatar");
-
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    database.child(avatar.value).set({
         avatar: avatar.value
     });
 }); */

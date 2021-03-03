@@ -7,7 +7,6 @@ const dados = document.getElementById("dados");
 
 const database = firebase.database();
 
-
 dados.addEventListener('click', (e) => {
     e.preventDefault();
     database.ref('users/' + username.value).set({

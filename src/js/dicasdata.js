@@ -1,10 +1,8 @@
 const titulo = document.getElementById("titulo");
 const descricao = document.getElementById("descricao");
 const publicar = document.getElementById("publicar");
-//const apagar = document.getElementById("apagar");
 const database = firebase.database().ref("dicas");
 const datadicas = firebase.database().ref("Dicas do dia");
-
 
 publicar.addEventListener('click', (e) => {
     e.preventDefault();
@@ -16,10 +14,7 @@ publicar.addEventListener('click', (e) => {
     document.location.reload(true);
 });
 
-//$.each(titulo.value, function (index, dicas) {
-
 database.once('value', function (snapshot) {
-    //alert(snap.val());
     snapshot.forEach(function (snap) {
         var nome = snap.child("dica_titulo").val();
         var legenda = snap.child("dica_descricao").val();
@@ -35,13 +30,7 @@ database.once('value', function (snapshot) {
     });
 });
 
-
-
-
-
-
 datadicas.once('value', function (snapshot) {
-    //alert(snap.val());
     snapshot.forEach(function (snap) {
         var nome = snap.child("nome").val();
         var descricao = snap.child("descricao").val();
@@ -57,26 +46,14 @@ datadicas.once('value', function (snapshot) {
     });
 });
 
-
-
-
-$(document).ready(function(){
-    $(document).on('click','.apagar',function(){
+$(document).ready(function () {
+    $(document).on('click', '.apagar', function () {
         const deedRef = firebase.database().ref('/dicas');
         deedRef.limitToLast(1).once("value", (snapshot) => {
-            snapshot.forEach((deedSnapshot) =>{
-                 deedSnapshot.ref.remove();
+            snapshot.forEach((deedSnapshot) => {
+                deedSnapshot.ref.remove();
             })
             document.location.reload(true);
         })
-       
-   
-       //alert(this.id);
-      //alert($(this).attr('id'));
     });
-    
 });
-
-
-
-

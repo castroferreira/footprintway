@@ -39,7 +39,7 @@ function validIframe() {
         document.getElementById("demo").innerHTML = areas_florestais.validationMessage;
         alert("Tem de preencher os campos todos.")
     } else {
-        alert("Valores inseridos com sucesso");
+        alert("Dados inseridos com sucesso");
         window.location.replace("../pages/pegada-ecologica.html")
     }
 } 

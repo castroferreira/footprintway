@@ -60,7 +60,9 @@
 					<p class="pb-5" id="demo"></p>
 
 					<div class="centrar4" disabled="true">
-						<button id="dados" class="login100-form-btn" onclick="validarDados()">AVANÇAR</button>
+						<button id="dados" class="login100-form-btn">VALIDAR</button>
+						<button class="login100-form-btn"><a href="escolher-avatar.html">AVANÇAR</a></button>
+
 					</div>
 
 				</form>
@@ -93,8 +95,26 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 	</script>
-	<script src="../js/validarDados.js"></script>
+	<script src="../js/form_user.js"></script>
 
+	<script>
+		function validarDados() {
+
+			if (!username.checkValidity() &&
+				!idade.checkValidity() &&
+				!genero.checkValidity() &&
+				!curso.checkValidity() &&
+				!departamento.checkValidity()
+			) {
+				document.getElementById("demo").innerHTML = username.validationMessage;
+				document.getElementById("demo").innerHTML = idade.validationMessage;
+				document.getElementById("demo").innerHTML = genero.validationMessage;
+				document.getElementById("demo").innerHTML = curso.validationMessage;
+				document.getElementById("demo").innerHTML = departamento.validationMessage;
+				alert("Tem de preencher os campos todos.")
+			}
+		}
+	</script>
 
 </body>
 

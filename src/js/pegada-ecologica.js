@@ -17,4 +17,3 @@ database.once('value', function (snapshot) {
         );
     });
 });
-

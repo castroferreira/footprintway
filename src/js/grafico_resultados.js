@@ -15,7 +15,6 @@ const areas_florestais = document.getElementById("areas_florestais");
 const database = firebase.database().ref("resultados");
 
 
-
 /*-------------------------Grafico----------------------------------------------------------*/
 var ctx = document.getElementById('tab1').getContext('2d');
 var tab1 = new Chart(ctx, {
@@ -78,7 +77,7 @@ var tab1 = new Chart(ctx, {
             titleFontColor: '#F5F6F5',
             bodyFontColor: '#F5F6F5',
             callbacks: {
-                title: function () {}
+                title: function () { }
             }
         }
 
@@ -153,7 +152,7 @@ var tab2 = new Chart(ctx, {
             titleFontColor: '#F5F6F5',
             bodyFontColor: '#F5F6F5',
             callbacks: {
-                title: function () {}
+                title: function () { }
             }
         }
     }
@@ -162,95 +161,43 @@ var tab2 = new Chart(ctx, {
 Chart.defaults.global.defaultFontSize = 11;
 Chart.defaults.global.defaultFontColor = '#313333';
 
-
-//var resultado_planetas = snap.child("resultado_planetas").val();
-//var resultado_pegada_carbono = snap.child("resultado_pegada_carbono").val();
-
-
-
-    //alert(snap.val());
-    //snapshot.forEach(function (snap) {
-
-
-    function addData(chart, data1, data2, data3, data4, data5) {
-        //chart.data.labels.push(label);
-        chart.data.datasets.forEach( function (dataset) {
-            dataset.data.push(data1, data2, data3, data4, data5);
-            //dataset.bars.forEach(function (bar) {
-              //  ctx.fillText(bar.value, bar.x, bar.y - 5);
-            //});
-        });
-        chart.update();
-    }
-
-    function removeData(chart, data) {
-        // Since you can't update chart type directly in 
-        //Charts JS you must destroy original chart and rebuild
-         chart.destroy();
-         chart = new Chart(ctx, {
-           type: document.getElementById("tab1").value,
-           data: data,
-         });
-         chart.update();
-      };
-    
-
-
-      /*var graficoData = [];
-
-      database.once('value').then(function(snapshot){
-          graficoData.push(snapshot.val()['resultado_alimentacao']);
-          graficoData.push(snapshot.val()['Female']);
-          graficoData.push(snapshot.val()['Nonbinary']);
-          graficoData.push(snapshot.val()['Other']);
-          graficoData.push(snapshot.val()["Didn't Say"]);
-          console.log(genderData);
-      })
-      console.log(genderData);*/
-
-
-
-
-
-
-
-
- var valueRef = firebase.database().ref('resultados');
-    valueRef.on('child_added', (snapshot) => {
-        
-        //var temperature = snapshot.val().temp;
-        // var time = snapshot.val().time
-        var resultado_alimentacao = snapshot.child("resultado_alimentacao").val();
-        var resultado_habitacao = snapshot.child("resultado_habitacao").val();
-        var resultado_mobilidade = snapshot.child("resultado_mobilidade").val();
-        var resultado_bens = snapshot.child("resultado_bens").val();
-        var resultado_servicos = snapshot.child("resultado_servicos").val();
-
-
-        addData(tab1, resultado_alimentacao, resultado_habitacao,
-            resultado_mobilidade, resultado_bens, resultado_servicos);
-
-console.log(resultado_alimentacao);
-console.log(resultado_habitacao);
-console.log(resultado_mobilidade);
-console.log(resultado_bens);
-console.log(resultado_servicos);
+function addData(chart, data1, data2, data3, data4, data5) {
+    chart.data.datasets.forEach(function (dataset) {
+        dataset.data.push(data1, data2, data3, data4, data5);
     });
+    chart.update();
+}
 
-
-
-    var valueRef = firebase.database().ref('resultados');
-    valueRef.on('child_added', (snapshot) => {
-        //var temperature = snapshot.val().temp;
-        // var time = snapshot.val().time
-
-        var resultado_areas_construidas = snapshot.child("resultado_areas_construidas").val();
-        var resultado_areas_cultivo = snapshot.child("resultado_areas_cultivo").val();
-        var resultado_areas_pastagem = snapshot.child("resultado_areas_pastagem").val();
-        var resultado_areas_pesca = snapshot.child("resultado_areas_pesca").val();
-        var resultado_areas_florestais = snapshot.child("resultado_areas_florestais").val();
-
-        addData(tab2, resultado_areas_construidas, resultado_areas_cultivo,
-            resultado_areas_pastagem, resultado_areas_pesca, resultado_areas_florestais);
+function removeData(chart, data) {
+    chart.destroy();
+    chart = new Chart(ctx, {
+        type: document.getElementById("tab1").value,
+        data: data,
     });
-    
+    chart.update();
+};
+
+var valueRef = firebase.database().ref('resultados');
+valueRef.on('child_added', (snapshot) => {
+    var resultado_alimentacao = snapshot.child("resultado_alimentacao").val();
+    var resultado_habitacao = snapshot.child("resultado_habitacao").val();
+    var resultado_mobilidade = snapshot.child("resultado_mobilidade").val();
+    var resultado_bens = snapshot.child("resultado_bens").val();
+    var resultado_servicos = snapshot.child("resultado_servicos").val();
+
+    addData(tab1, resultado_alimentacao, resultado_habitacao,
+        resultado_mobilidade, resultado_bens, resultado_servicos);
+});
+
+var valueRef = firebase.database().ref('resultados');
+valueRef.on('child_added', (snapshot) => {
+
+    var resultado_areas_construidas = snapshot.child("resultado_areas_construidas").val();
+    var resultado_areas_cultivo = snapshot.child("resultado_areas_cultivo").val();
+    var resultado_areas_pastagem = snapshot.child("resultado_areas_pastagem").val();
+    var resultado_areas_pesca = snapshot.child("resultado_areas_pesca").val();
+    var resultado_areas_florestais = snapshot.child("resultado_areas_florestais").val();
+
+    addData(tab2, resultado_areas_construidas, resultado_areas_cultivo,
+        resultado_areas_pastagem, resultado_areas_pesca, resultado_areas_florestais);
+});

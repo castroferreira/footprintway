@@ -7,16 +7,14 @@ const dados = document.getElementById("dados");
 
 const database = firebase.database();
 
-
-dados.addEventListener('click', (e) =>{
+dados.addEventListener('click', (e) => {
     e.preventDefault();
     database.ref('users/' + username.value).set({
-       nome: username.value,
-       idade_dados: idade.value,
-       genero_dado: genero.value,
-       curso_dados: curso.value,
-       departamento_dado: departamento.value
-
+        nome: username.value,
+        idade_dados: idade.value,
+        genero_dado: genero.value,
+        curso_dados: curso.value,
+        departamento_dado: departamento.value
     });
-	window.alert("Dados submetidos com sucesso!");
+    window.alert("Dados submetidos com sucesso!");
 });

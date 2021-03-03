@@ -31,28 +31,3 @@ btn.addEventListener('click', (e) => {
         resultado_areas_florestais: areas_florestais.value
     });
 });
-
-// function writeNewPost(uid, planetas, pegada_carbono, alimentacao, quantidade, mobilidade, bens, servicos, areas_construidas, areas_cultivo, areas_pastagem, areas_pesca, areas_florestais) {
-//     var postData = {
-//         uid: uid,
-//         planetas: planetas,
-//         pegada_carbono: pegada_carbono,
-//         alimentacao: alimentacao,
-//         quantidade: quantidade,
-//         mobilidade: mobilidade,
-//         bens: bens,
-//         servicos: servicos,
-//         areas_construidas: areas_construidas,
-//         areas_cultivo: areas_cultivo,
-//         areas_pastagem: areas_pastagem,
-//         areas_pesca: areas_pesca,
-//         areas_florestais: areas_florestais
-//     };
-
-//     var novo = firebase.database().ref().child('resultados').push();
-//     var updates = {};
-//     updates['/resultados/' + novo] = postData;
-//     updates['/user-resultados/' + uid + '/' + novo] = postData;
-
-//     return firebase.database().ref().update(updates);
-// }
